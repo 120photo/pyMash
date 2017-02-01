@@ -36,4 +36,5 @@ def categories_menu():
     print("{} : All".format(num))
 
 categories_menu()
+user_choice = input("Choose a number : ")
 # show_stories()
