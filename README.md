@@ -1,3 +1,5 @@
 # Python Mashable
 
-Application that loads up data from mashabe. Practicing working with API.
+Terminal print out of 60 stories on Mashable.com website.
+
+Example of using the Mashable API to pull data off the site.
