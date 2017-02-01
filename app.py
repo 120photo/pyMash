@@ -26,4 +26,14 @@ def show_stories():
 
             ++++++++++++++++++""".format(story['title'], story['excerpt'], story['link']))
 
+def categories_menu():
+    print("Welcome / Read Mashable Stories")
+    print("Select a Category for Stories")
+    num = 1
+    for category in categories:
+        print("{} : {}".format(num,category))
+        num += 1
+    print("{} : All".format(num))
+
+categories_menu()
 # show_stories()
