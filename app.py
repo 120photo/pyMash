@@ -29,11 +29,9 @@ def show_stories():
 def categories_menu():
     print("Welcome / Read Mashable Stories")
     print("Select a Category for Stories")
-    num = 1
-    for category in categories:
-        print("{} : {}".format(num,category))
-        num += 1
-    print("{} : All".format(num))
+    for index, category in enumerate(categories):
+        print("{} : {}".format(index,category))
+    print("{} : All".format(len(category) + 1))
 
 categories_menu()
 user_choice = input("Choose a number : ")
