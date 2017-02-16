@@ -1,0 +1,1 @@
+from .mash import app
