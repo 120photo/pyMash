@@ -6,10 +6,14 @@
 </div>
 {% for story in doc['new']  %}
 
-  <div class="col-sm-6 col-md-4">
-    <h3>Title : {{ story['title'] }}</h3>
-    <img src='{{ story['image'] }}' width="300px" /><br/>
-    <p>{{ story['excerpt'] }}</p>
+    <div class="panel">
+    <div class="panel-body">
+      <p>{{ story['title'] }}</p>
+      <img src="{{ story['responsive_images'][0]['image'] }}" alt="" /><br />
+      <button type="button" class="btn btn-default btn-lg">
+        <a href="{{ story['link'] }}" target="_blank"><span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> Read More</a>
+      </button>
+    </div>
   </div>
 
 {% endfor %}
