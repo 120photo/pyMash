@@ -1,0 +1,17 @@
+{%extends 'layout.html'%}
+{%block content%}
+<div class="jumbotron">
+  <h1>Mashable Stories</h1>
+  <p>Python extracting some stories from the webs</p>
+</div>
+{% for story in doc['new']  %}
+
+  <div class="col-sm-6 col-md-4">
+    <h3>Title : {{ story['title'] }}</h3>
+    <img src='{{ story['image'] }}' width="300px" /><br/>
+    <p>{{ story['excerpt'] }}</p>
+  </div>
+
+{% endfor %}
+
+{%endblock%}

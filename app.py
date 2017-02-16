@@ -18,7 +18,7 @@ categories = sorted(list(set(categories)))
 
 @app.route('/')
 def home():
-    return "now with flask"
+    return render_template("home.html", doc = doc)
 
 if __name__ == '__main__':
     app.run()
