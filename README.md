@@ -1,5 +1,5 @@
 # Python Mashable
 
-Terminal print out of 60 stories on Mashable.com website.
+Flask app that uses the Mashable API extract latest 60 stories on Mashable.com.
 
-Example of using the Mashable API to pull data off the site.
+Example of using the Mashable public API.

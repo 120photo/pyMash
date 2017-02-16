@@ -22,26 +22,3 @@ def home():
 
 if __name__ == '__main__':
     app.run()
-
-# def show_stories():
-#     for story in doc['new']:
-#         print("""
-#             ++++++++++++++++++
-#             Title: {}
-#             ---
-#             Excerpt: {}
-#             ---
-#             URL: {}
-
-#             ++++++++++++++++++""".format(story['title'], story['excerpt'], story['link']))
-
-# def categories_menu():
-#     print("Welcome / Read Mashable Stories")
-#     print("Select a Category for Stories")
-#     for index, category in enumerate(categories):
-#         print("{} : {}".format(index,category))
-#     print("{} : All".format(len(category) + 1))
-
-# categories_menu()
-# user_choice = input("Choose a number : ")
-# # show_stories()
