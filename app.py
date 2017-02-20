@@ -18,7 +18,7 @@ categories = sorted(list(set(categories)))
 
 @app.route('/')
 def home():
-    return render_template("home.html", doc = doc['new'])
+    return render_template("home.html", doc = doc['new'], categories = categories)
 
 if __name__ == '__main__':
     app.run()
