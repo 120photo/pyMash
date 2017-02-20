@@ -18,6 +18,9 @@
     </div>
     <ul class="nav navbar-nav">
       <li><a href="/">Home</a></li>
+      {% for category in categories %}
+       <li><a href="{{ category }}">{{ category }}</a></li> 
+      {% endfor %}
     </ul>
   </div>
   </nav>
