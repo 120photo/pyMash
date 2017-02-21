@@ -5,13 +5,13 @@
 </div>
 
 <div class="container-fluid">
-  {% for stories in doc | batch(3, '&nbsp;') %}
+  {% for stories in doc | batch(3) %}
   <div class="row">
   {%- for story in stories %}
     <div class="col-md-4">
       <div class="well">
         <h3>{{ story['title'] }}</h3>
-          <img src="{{ story['image'] }}" alt="" width="300px"><br/>w
+          <img src="{{ story['image'] }}" alt="" width="300px"><br/>
         <a href="{{ story['link'] }}" target="_blank">Read More</a>
       </div>
     </div>
