@@ -10,8 +10,9 @@
   {%- for story in stories %}
     <div class="col-md-4">
       <div class="well">
-        <h3>{{ story['title'] }}</h3>
+        <h4>{{ story['excerpt'] }}</h4>
           <img src="{{ story['image'] }}" alt="" width="300px"><br/>
+          <p>{{ story['title'] }}... </p>
         <a href="{{ story['link'] }}" target="_blank">Read More</a>
       </div>
     </div>
